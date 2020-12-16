@@ -183,6 +183,20 @@ for line in range(len(strlist)):
     print(strlist[line])
 print(len(strlist))
 
+for line in range(len(strlist)):
+    firsthalf = strlist[line].split(', contain')[0]
+    sechalf = strlist[line].split(', contain')[1:]
+    if 'shiny gold' in firsthalf:
+        print('shiny gold contains:', sechalf)
+        print(strlist[line])
+
+for line in range(len(strlist)):
+    firsthalf = strlist[line].split(', contain')[0]
+    sechalf = strlist[line].split(', contain')[1:]
+    if 'vibrant blue' in firsthalf:
+        print('vibrant blue contains:', sechalf)
+        print(strlist[line])
+
 
 '''
 if (contents) == 'no other':
