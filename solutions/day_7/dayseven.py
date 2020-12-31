@@ -197,6 +197,14 @@ for line in range(len(strlist)):
         print('vibrant blue contains:', sechalf)
         print(strlist[line])
 
+def searchbags(bagcolor):
+    for line in range(len(strlist)):
+        firsthalf = strlist[line].split(', contain')[0]
+        sechalf = strlist[line].split(', contain')[1:]
+        if bagcolor in firsthalf:
+            print(bagcolor,' contains:', sechalf)
+            print(strlist[line])
+
 
 '''
 if (contents) == 'no other':
